@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c18g8h7jwv16y"]
+
+[ext_resource type="Script" uid="uid://bwsqtlcua0hmj" path="res://Scripts/Map/Map.gd" id="1_xtf6f"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_xtf6f")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(250, 250)
