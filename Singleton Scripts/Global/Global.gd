@@ -15,9 +15,9 @@ const MAP_SHAPE: int = 2
 const SUCCESS: bool = true
 const FAIL: bool = false
 
-const GRID_SPRITE: String = "res://__Sprites/Grid/grid_element.png"
-const MONSTER_SPRITE: String = "res://__Sprites/Monster/monster.png"
-const KNIGHT_SPRITE: String = "res://__Sprites/Knight/knight.png"
+const GRID_SPRITE: String = "res://Sprites/Grid/grid_element.png"
+const MONSTER_SPRITE: String = "res://Sprites/Monster/monster.png"
+const KNIGHT_SPRITE: String = "res://Sprites/Knight/knight.png"
 
 const DEFAULT_POSITION_INT: int = 0
 const DEFAULT_POSITION_VEC: Vector2 = Vector2.ZERO
