@@ -9,7 +9,7 @@ var map_width: float = 0.0
 func _init(_current_position: float, _map: MapObject) -> void:
 	name = NAME
 	
-	current_position = _current_position
+	#current_position = _current_position
 	map = _map
 
 func _execute_helper() -> void:
@@ -17,9 +17,11 @@ func _execute_helper() -> void:
 	
 	match map_width:
 		0.0:
-			_y = (current_position - _x)
+			#_y = (current_position - _x)
+			pass
 		_:
-			_x = int(current_position) % int(map_width)
-			_y = (current_position - _x) / map_width
+			#_x = int(current_position) % int(map_width)
+			#_y = (current_position - _x) / map_width
+			pass
 	
-	result = Vector2(_x, _y)
+	#result = Vector2(_x, _y)

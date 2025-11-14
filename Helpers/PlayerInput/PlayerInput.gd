@@ -2,17 +2,23 @@ class_name PlayerInput extends Helper
 
 const UP: String = G.UP
 const DOWN: String = G.DOWN
+const RIGHT: String = G.RIGHT
+const LEFT: String = G.LEFT
 const ENTER: String = G.ENTER
 
 const ERROR: String = "ERROR!"
 
 var up: Keystroke = Keystroke.new(UP)
 var down: Keystroke = Keystroke.new(DOWN)
+var right: Keystroke = Keystroke.new(RIGHT)
+var left: Keystroke = Keystroke.new(LEFT)
 var enter: Keystroke = Keystroke.new(ENTER)
 
 func read_input() -> void:
 	up = find_input(Keystroke.new(UP))
 	down = find_input(Keystroke.new(DOWN))
+	right = find_input(Keystroke.new(RIGHT))
+	left = find_input(Keystroke.new(LEFT))
 	enter = find_input(Keystroke.new(ENTER))
 	
 

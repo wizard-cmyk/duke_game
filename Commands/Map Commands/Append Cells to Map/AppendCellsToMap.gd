@@ -2,30 +2,51 @@ class_name AppendCellsToMap extends MapCommand
 
 const NAME: String = "Append Cells to Map"
 
-var map_size: float = 0.0
-var generate_cell_cmd: GenerateCellInstance = null
-var array: Array[CellInstance] = []
+var length: float
+var width: float
+var area: float
 
-var grid_setting: CellInstance = null
+var generate_cell_instance: GenerateCellInstance
+var array: Array[CellInstance]
 
-var new_cell: CellInstance = CellInstance.new()
+var new_cell: CellInstance
+
+var gen_in_bulk: Array[GenerateCellInstance]
 
 func _init(_map: MapObject) -> void:
 	name = NAME
 	
 	map = _map
+	array = []
 
+class GenerateCellInstancesBulk extends Helper:
+	var cell_instance_command_array: Array[GenerateCellInstance]
+	var cell_position: Vector2 
+	var generate_cell_instance_cmd: GenerateCellInstance
+	
+	var data_in: CellData
+	
+	func assign_cmd_to_array(_length: float, _width: float, _map: MapObject) -> Array[GenerateCellInstance]:
+		cell_instance_command_array = []
+		for y in _length:
+			for x in _width:
+				cell_position = Vector2(x, y)
+				
+				data_in = CellData.new(cell_position)
+				
+				generate_cell_instance_cmd = GenerateCellInstance.new(data_in, _map) ## Important
+				
+				cell_instance_command_array.append(generate_cell_instance_cmd) 
+		return cell_instance_command_array
 
 func _execute_helper() -> void:
 	array = map.data.cell_array
-	map_size =  map.data.size
+	length =  map.data.length
+	width = map.data.width
+	area = map.data.area
 	
-	for current_cell in int(map_size):
-		
-		new_cell = CellInstance.new()
-		
-		generate_cell_cmd = GenerateCellInstance.new(float(current_cell), false, map)  ## Important
-		generate_cell_cmd.execute()
-		
-		new_cell = generate_cell_cmd.result
-		array.append(new_cell)
+	gen_in_bulk = GenerateCellInstancesBulk.new().assign_cmd_to_array(length, width, map)
+	
+	for cmd in gen_in_bulk:
+		cmd.execute()
+		array.append(cmd.result)

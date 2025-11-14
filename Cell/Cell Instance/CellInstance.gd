@@ -7,14 +7,9 @@ var monster_sprite: CellSprite = CellSprite.new(Texture2D.new())
 var has_monster: bool = false
 var has_grid: bool = false
 
-var cell_data_in: CellData = G.cell_default
-
-func _init(_cell_data_in: CellData = cell_data_in) -> void:
+func _init(_data: CellData) -> void:
 	
-	cell_data_in = _cell_data_in
-	
-	data = CellData.new()
-	data.copy_data(cell_data_in)
+	data = _data
 	
 	if data.has_grid:
 		grid_sprite = CellSprite.new(SpriteInfo.grid_resource)
