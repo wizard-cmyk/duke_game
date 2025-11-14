@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DukeGame"
+run/main_scene="uid://c18g8h7jwv16y"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+
+[autoload]
+
+SpriteInfo="*res://Singleton Scripts/SpriteInfo/SpriteInfo.gd"
+G="*res://Singleton Scripts/Global/Global.gd"
+
+[file_customization]
+
+folder_colors={
+"res://__Sprites/": "gray",
+"res://__Sprites/Grid/": "yellow",
+"res://__Sprites/Knight/": "yellow",
+"res://__Sprites/Map Icon/": "yellow",
+"res://__Sprites/Monster/": "yellow",
+"res://___Aseprite Files/": "gray"
+}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

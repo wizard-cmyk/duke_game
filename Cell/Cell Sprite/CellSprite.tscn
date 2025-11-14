@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1vb2oc6fibc1"]
+
+[ext_resource type="Script" uid="uid://cpm0a6xg5w6xw" path="res://Cell/Cell Sprite/CellSprite.gd" id="1_qr3a4"]
+
+[node name="CellSprite" type="Sprite2D"]
+script = ExtResource("1_qr3a4")
+metadata/_custom_type_script = "uid://cpm0a6xg5w6xw"

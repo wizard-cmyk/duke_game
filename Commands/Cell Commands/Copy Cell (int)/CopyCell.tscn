@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cysxjdgpekmcc"]
+
+[ext_resource type="Script" uid="uid://vk6t8tsnmdu2" path="res://Commands/Cell Commands/Copy Cell (int)/CopyCell.gd" id="1_0vn21"]
+
+[node name="CopyCell" type="Node2D"]
+script = ExtResource("1_0vn21")

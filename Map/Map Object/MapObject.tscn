@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjctjq7rhqh4l"]
+
+[ext_resource type="Script" uid="uid://d1oks6aekkjd7" path="res://Map/Map Object/MapObject.gd" id="1_oi28d"]
+
+[node name="Map Object" type="Node2D"]
+script = ExtResource("1_oi28d")
+metadata/_custom_type_script = "uid://d1oks6aekkjd7"
