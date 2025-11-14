@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="DukeGame"
-run/main_scene="uid://c18g8h7jwv16y"
+run/main_scene="uid://ra7wi3iqf6no"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
