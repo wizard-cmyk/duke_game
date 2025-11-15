@@ -16,8 +16,8 @@ config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
 
-SpriteInfo="*res://Singleton Scripts/SpriteInfo/SpriteInfo.gd"
-G="*res://Singleton Scripts/Global/Global.gd"
+Global="*res://Singletons/Global.gd"
+SpriteInfo="*res://Singletons/SpriteInfo.gd"
 
 [file_customization]
 
