@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqmy8k4hiklc4"]
-
-[ext_resource type="Script" uid="uid://chu1lx11t3i8v" path="res://Commands/Cell Commands/Copy Cell (Vector2)/CopyCellVec2.gd" id="1_7pgtj"]
-
-[node name="CopyCellVec2" type="Node2D"]
-script = ExtResource("1_7pgtj")
