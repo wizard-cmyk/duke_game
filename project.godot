@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="DukeGame"
-run/main_scene="uid://c18g8h7jwv16y"
+run/main_scene="uid://ra7wi3iqf6no"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
 
-SpriteInfo="*res://Singleton Scripts/SpriteInfo/SpriteInfo.gd"
-G="*res://Singleton Scripts/Global/Global.gd"
+Global="*res://Global.gd"
+SpriteInfo="*res://Sprites/SpriteInfo.gd"
 
 [file_customization]
 
