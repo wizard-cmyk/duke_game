@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq17uj2rvcr0j"]
-
-[ext_resource type="Script" uid="uid://cqr8xp4y8l13b" path="res://Data/_Default Data/Data.gd" id="1_ctasc"]
-
-[node name="Data" type="Node2D"]
-script = ExtResource("1_ctasc")
