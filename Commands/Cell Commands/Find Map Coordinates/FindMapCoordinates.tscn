@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgwcrhr4keb45"]
-
-[ext_resource type="Script" uid="uid://dg4oep6fu6fby" path="res://Commands/Cell Commands/Find Map Coordinates/FindMapCoordinates.gd" id="1_y2eqy"]
-
-[node name="Find Map Coordinates" type="Node2D"]
-script = ExtResource("1_y2eqy")
