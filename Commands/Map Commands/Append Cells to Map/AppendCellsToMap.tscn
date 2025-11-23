@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ca32x0absnhvn"]
-
-[ext_resource type="Script" uid="uid://bdrakgpktu0j5" path="res://Commands/Map Commands/Append Cells to Map/AppendCellsToMap.gd" id="1_oh7pa"]
-
-[node name="Append Cells to Map" type="Node2D"]
-script = ExtResource("1_oh7pa")

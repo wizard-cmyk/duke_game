@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://851hvo0v4tg5"]
-
-[ext_resource type="Script" uid="uid://dks6xnxc7pid6" path="res://Commands/Map Commands/Destroy Map/DestroyMap.gd" id="1_mucil"]
-
-[node name="Destroy Map" type="Node2D"]
-script = ExtResource("1_mucil")

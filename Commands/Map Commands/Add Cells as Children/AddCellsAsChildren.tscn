@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnyeetm5vejme"]
-
-[ext_resource type="Script" uid="uid://d3m2dbqngrwkp" path="res://Commands/Map Commands/Add Cells as Children/AddCellsAsChildren.gd" id="1_61o1t"]
-
-[node name="Add Cells as Children" type="Node2D"]
-script = ExtResource("1_61o1t")
