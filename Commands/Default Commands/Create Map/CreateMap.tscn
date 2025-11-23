@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://btihglq61h3rp"]
-
-[ext_resource type="Script" uid="uid://diwyyi6c2usr7" path="res://Commands/Default Commands/Create Map/CreateMap.gd" id="1_nww8u"]
-
-[node name="CreateMap" type="Node2D"]
-script = ExtResource("1_nww8u")
